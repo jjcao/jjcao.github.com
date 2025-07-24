@@ -7,7 +7,7 @@
 <link type="text/css" rel="stylesheet" href="styles/960.css" />
 <link type="text/css" rel="stylesheet" href="styles/style.css" />
 <link type="text/css" rel="stylesheet" href="styles/style-default.css" id="style-switcher" />
-<link type="text/css" rel="stylesheet" href="styles/vslider1.css" />
+<link type="text/css" rel="stylesheet" href="styles/vslider.css" />
 
 <!-- Tiny Slider CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
@@ -26,6 +26,53 @@
     });
   });
 </script>
+
+<style>
+.my-slider-container {
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.tns-nav {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -25px;
+}
+.tns-nav button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+}
+.tns-nav-active {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+.tns-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+}
+.tns-controls button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    pointer-events: all;
+}
+</style>
 
 </head>
 <body class="home">
